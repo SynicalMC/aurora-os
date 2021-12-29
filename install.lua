@@ -1,4 +1,4 @@
-execute("clear")
+shell.execute("clear")
 print("Installing Aurora OS...\n")
 
 print("Installing Images...")
