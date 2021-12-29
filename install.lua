@@ -1,0 +1,10 @@
+execute("clear")
+print("Installing Aurora OS...\n")
+
+print("Installing Images...")
+execute("mkdir images/")
+fs.makeDir("images/icons/")
+execute("wget https://raw.githubusercontent.com/SynicalMC/aurora-os/main/images/desktop.nfp desktop.nfp")
+execute("wget https://raw.githubusercontent.com/SynicalMC/aurora-os/main/images/icons/testprog.nfp testprog.nfp")
+fs.move("testprog.nfp, images/icons/")
+print("Done!")
